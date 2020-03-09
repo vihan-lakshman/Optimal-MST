@@ -1,2 +1,5 @@
 # Optimal-MST
-Expository paper describing Pettie and Ramachandran's optimal minimum spanning tree algorithm. Also includes survey of other historically important MST algorithms.
+
+Final project report for CS166 (Data Structures) at Stanford in 2016, an incredibly fun, challenging, and intellectually expanding class. We wrote an expository paper describing Pettie and Ramachandran's optimal minimum spanning tree algorithm. Fascinatingly, while we know that the algorithm is provably optimal, we do not have a precise upper bound on its runtime on arbitrary graphs! Nevertheless, as we discuss in the paper, we have some very strong guarantees on the runtime: (1) the algorithm will run in linear time when the graph contains at most 2^{65536} nodes (an unfathomably large number much beyond any graph we could enounter in practice) and (2) the algorithm runs in linear time with high probability on Erdos-Renyi random graphs. The proof of the latter result involves some nice tools from stochastic processes, namely edge-addition martingales; we present a proof of this result that fills in some non-obvious details from the original paper.      
+
+This report also includes a survey of other historically important MST algorithms, building off of Jason Eisner's wonderful [1997 tutorial](https://www.cs.jhu.edu/~jason/papers/eisner.mst-tutorial.pdf). 
